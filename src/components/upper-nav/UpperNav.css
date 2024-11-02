@@ -1,0 +1,13 @@
+.upper-nav{
+    margin-left: 8rem;
+    font-weight: 600;
+    color: black;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    max-height: 50px;
+}
+.ml-auto{
+    margin-right: 10rem;
+    color: rgb(22, 22, 208); 
+    font-size: 15px;
+}

@@ -1,0 +1,103 @@
+.banner{
+    background-image: url('../../assets/slider3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 600px;
+    width: 100%;
+    margin-bottom: 200px;
+}
+
+.first-content{
+    font-weight: 800;
+    width: 700px;
+    height: 450px;
+    margin-left: 8rem;
+    padding-top: 9rem;
+}
+
+.first-content h1{
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+.first-content h6{
+    display: inline-block;
+    font-weight: 600;
+}
+
+.first-content .banner-btn1{
+    border: 1px solid blue;
+    background-color: blue;
+    color: #fff;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    font-weight: 550;
+    margin: 1rem;
+}
+
+.first-content .banner-btn2{
+    border: 1px solid rgb(9, 9, 68);
+    background-color: rgb(9, 9, 68);
+    color: #fff;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    font-weight: 550;
+    margin: 1rem;
+}
+.second-content{
+    height: 300px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.second-content .box{
+    width: 300px;
+    height: 250px;
+    background-color: rgb(31, 81, 255);
+    margin: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Smooth transition */
+    overflow: hidden;
+    color: #fff;
+    display: block;
+    padding: 2rem;
+    text-align: left;
+    display: block;
+}
+
+.second-content .box:hover{
+    transform: scale(1.05);
+}
+
+.second-content .box a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.second-content .box h4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.second-content .box p{
+    display: block;
+}
+.second-content .box ul{
+    margin-top: -1;
+}
+.second-content .box ul li{
+    text-align: left;
+    list-style-type: none;
+}
+
+.box .day {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between items */
+    margin-bottom: 10px; /* Space between list items */
+    text-align: left;
+    font-size: 15px;
+}
+
+.box .day span {
+    margin-left: 10px; /* Space between day and time */
+}

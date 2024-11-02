@@ -1,0 +1,35 @@
+.who-we-are{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: left;
+    max-width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.who-we-are .first-content1{
+    margin: 2rem 0 0 6rem;
+}
+
+.who-we-are .first-content1 p,li{
+    color: gray;
+}
+
+.who-we-are .first-content1 li{
+    list-style-type: square;
+}
+
+.who-we-are .first-content1 .hr{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    width: 60px;
+    height: 5px;
+    background-color: darkblue;
+    border-radius: 20px;
+}
+
+.second-content1 img{
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
