@@ -1,12 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../../assets/logo.png'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
 import { Navbar, Nav } from 'react-bootstrap';
+import { useEffect } from 'react';
+import AppointmentForm from '../appointmentForm/AppointmentForm';
 
 const Navbar1 = () => {
+
+  // to navbar stay fixed when scrolling
+  const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 300);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+
+    //to display appointment form
+    const [isModelOpen, setIsModelOpen] = useState(false);
+
+    const toggleModal = () => {
+      setIsModelOpen(!isModelOpen);
+    }
+  
   return (
-    <div className='navbar'>
+    <div className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className='navbar-img'>
         <Link to='/'><img src={logo} /></Link>
       </div>
@@ -27,8 +52,16 @@ const Navbar1 = () => {
       </div>
 
       <div className='navbar-btn'>
-        <button>Book Appointment</button>
+        <button onClick={toggleModal}>Book Appointment</button>
       </div>
+      {isModelOpen && (
+        <div className="modal">
+          <div className="modal-content">
+            <span className="close" onClick={toggleModal}>&times;</span>
+            <AppointmentForm onClose={toggleModal} /> {/* Pass close handler */}
+          </div>
+        </div>
+      )}
     </div>
   )
 }

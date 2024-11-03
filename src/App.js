@@ -7,6 +7,7 @@ import Details from './components/details/Details';
 import Counts from './components/counts/Counts';
 import WhoweAre from './components/ourDetails/WhoweAre';
 import Footer from './components/footer/Footer';
+import ScrollToTopButton from './components/scrolltoTop/ScrollTop';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Counts />
       <WhoweAre />
       <Footer />
+      <ScrollToTopButton />
 
        <Routes>
         <Route path='/about'>About</Route>

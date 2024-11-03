@@ -7,6 +7,8 @@ img{
     align-items: center; /* Vertically center items */
     justify-content: space-between; /* Space between logo and navbar */
     padding: 10px; /* Add padding if needed */
+    position: fixed;
+    z-index: 1000;
   }
   
   .navbar-img img {
