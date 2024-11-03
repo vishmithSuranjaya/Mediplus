@@ -3,7 +3,8 @@
     grid-template-columns: 50% 50%;
     text-align: left;
     max-width: 100%;
-    position: absolute;
+    min-height: 400px;
+    
     overflow: hidden;
 }
 
@@ -11,8 +12,8 @@
     margin: 2rem 0 0 6rem;
 }
 
-.who-we-are .first-content1 p,li{
-    color: gray;
+.who-we-are .first-content1 h1{
+    color: black;
 }
 
 .who-we-are .first-content1 li{
@@ -30,6 +31,6 @@
 
 .second-content1 img{
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
 }

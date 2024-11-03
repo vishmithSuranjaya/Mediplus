@@ -19,7 +19,7 @@ function App() {
       <Details />
       <Counts />
       <WhoweAre />
-      
+      <Footer />
 
        <Routes>
         <Route path='/about'>About</Route>
