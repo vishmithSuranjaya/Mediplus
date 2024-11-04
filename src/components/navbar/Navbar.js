@@ -4,7 +4,7 @@ import './Navbar.css'
 import { Link } from 'react-router-dom'
 import { Navbar, Nav } from 'react-bootstrap';
 import { useEffect } from 'react';
-import AppointmentForm from '../appointmentForm/AppointmentForm';
+import AppointmentForm from '../../pages/AppointmentForm';
 
 const Navbar1 = () => {
 
@@ -42,7 +42,7 @@ const Navbar1 = () => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
           <Nav.Link as={Link} to="/">Home</Nav.Link>
-          <Nav.Link as={Link} to="/about">Doctors</Nav.Link>
+          <Nav.Link as={Link} to="/doctors">Doctors</Nav.Link>
           <Nav.Link as={Link} to="#services">Services</Nav.Link>
           <Nav.Link as={Link} to="#blogs">Blogs</Nav.Link>
           <Nav.Link as={Link} to="/contact">Contact US</Nav.Link>
@@ -52,7 +52,9 @@ const Navbar1 = () => {
       </div>
 
       <div className='navbar-btn'>
-        <button onClick={toggleModal}>Book Appointment</button>
+      <Link to="/form">
+  Book Appointment
+</Link>
       </div>
       {isModelOpen && (
         <div className="modal">
